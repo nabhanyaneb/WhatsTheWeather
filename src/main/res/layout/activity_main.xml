@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nabhanyaneb.weatherapplication.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_layoutOne"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/id_editTextZip"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:inputType="textPersonName"
+            android:text="Zip Code" />
+
+        <Button
+            android:id="@+id/id_buttonGo"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="GO!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layoutTwo"
+        android:layout_width="320dp"
+        android:layout_height="153dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/id_textViewQuote"
+                android:layout_width="122dp"
+                android:layout_height="149dp"
+                android:fontFamily="cursive"
+                android:text="Quote: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_textViewCity"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="City:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_textViewTemp"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:text="Temp: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/id_imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/loading" />
+
+            <TextView
+                android:id="@+id/id_textViewWeather"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:text="Weather:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="105dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id_textViewCurrent"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="cursive"
+                android:text="Current Time:"
+                android:textSize="16sp"
+                tools:fontFamily="monospace" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layoutThree"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textViewPlus3"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Time:" />
+
+        <TextView
+            android:id="@+id/id_textViewInfo3"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Weather:" />
+
+        <ImageView
+            android:id="@+id/id_imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/loading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layoutFour"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textViewPlus6"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Time:" />
+
+        <TextView
+            android:id="@+id/id_textViewInfo6"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Weather:" />
+
+        <ImageView
+            android:id="@+id/id_imageView6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/loading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layoutFive"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textViewPlus9"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Time: " />
+
+        <TextView
+            android:id="@+id/id_textViewInfo9"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Weather: " />
+
+        <ImageView
+            android:id="@+id/id_imageView9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/loading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layoutSix"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textViewPlus12"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Time: " />
+
+        <TextView
+            android:id="@+id/id_textViewInfo12"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Weather:" />
+
+        <ImageView
+            android:id="@+id/id_imageView12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/loading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layoutSeven"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textViewPlus15"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Time: " />
+
+        <TextView
+            android:id="@+id/id_textViewInfo15"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Weather:" />
+
+        <ImageView
+            android:id="@+id/id_imageView15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/loading" />
+    </LinearLayout>
+
+
+</LinearLayout>
